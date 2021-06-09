@@ -47,6 +47,7 @@
 ## 3. 모델 설정
 
 ![Model](http://www.index.go.kr/rMate/jsp/images/rMateChart_1009011.png)
+
 위 사진은 한국의 시간이 지남에따라 인구성장률 변화이다. 요즘 결혼을 안하려는 청년들이 많다는 뉴스를 보기도 했고 우리나라의 저출산문제에 대해 관심이 있기 때문에 선택을 했다.
 
 
@@ -65,7 +66,7 @@ public class Main {
         // 000000
         // 010000
 
-        SimulatedAnnealing sa = new SimulatedAnnealing(1, 0.95, 100);
+        SimulatedAnnealing sa = new SimulatedAnnealing(1, 0.0095, 100);
         sa.solve(new Problem() {
             @Override
             public double fit(double x) {
@@ -116,13 +117,13 @@ public class SimulatedAnnealing {
             for(int j=0; j<kt; j++) {
                 double x1 = r.nextDouble() * (upper - lower) + lower;    // 이웃해
                 double f1 = p.fit(x1);
-                if(p.isNeighborBetter(f0, f1)) {                         // 이웃해가 더 나음
+                if(p.isNeighborBetter(f0, f1)) {                         // 이웃해가 더 나을 경우
                     x0 = x1;
                     f0 = f1;
                     hist.add(f0);
-                } else {                                                 // 기존해가 더 나음
+                } else {                                                 // 기존해가 더 나을 경우
                     double d = f1 - f0;
-                    double p0 = Math.exp(-d/t);
+                    double p0 = Math.exp(-d/(t*t*t));
                     if(r.nextDouble() < p0) {
                         x0 = x1;
                         f0 = f1;
@@ -147,6 +148,15 @@ public interface Problem {
     boolean isNeighborBetter(double f0, double f1);
 }
 ```
+
+
+
+
+## 5. 결과 사진
+![스크린샷(55)](https://user-images.githubusercontent.com/81409594/121368304-f09b5380-c975-11eb-88e0-8916e65e2c0e.png)
+
+
+Main메소드에서 냉각률을 0.0095로 감소켜보았다 그 결과는 위 사진과 같다. 결과는 parameter추정에 실패한 것 같다. t값도 더 낮게 해보고 p0값도 낮게 해보았지만 parameter 추정이 쉽지 않았다.
 
 
 
