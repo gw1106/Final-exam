@@ -46,7 +46,7 @@
 
 ## 3. 모델 설정
 
-![http://www.index.go.kr/rMate/jsp/images/rMateChart_1009011.png](http://www.index.go.kr/rMate/jsp/images/rMateChart_1009011.png)
+![Model](http://www.index.go.kr/rMate/jsp/images/rMateChart_1009011.png)
 위 사진은 한국의 시간이 지남에따라 인구성장률 변화이다. 요즘 결혼을 안하려는 청년들이 많다는 뉴스를 보기도 했고 우리나라의 저출산문제에 대해 관심이 있기 때문에 선택을 했다.
 
 
