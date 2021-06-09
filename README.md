@@ -160,4 +160,12 @@ Main메소드에서 냉각률을 0.0095로 감소켜보았다 그 결과는 위 
 
 
 
+### 6. 참조
+양성봉, 『알기 쉬운 알고리즘』. 파주: (주)생능출판사, 2013
+
+[https://ko.wikipedia.org/wiki/%EB%8B%B4%EA%B8%88%EC%A7%88_%EA%B8%B0%EB%B2%95](https://ko.wikipedia.org/wiki/%EB%8B%B4%EA%B8%88%EC%A7%88_%EA%B8%B0%EB%B2%95)
+
+[https://www.index.go.kr/potal/stts/idxMain/selectPoSttsIdxMainPrint.do?idx_cd=1009&board_cd=INDX_001](https://www.index.go.kr/potal/stts/idxMain/selectPoSttsIdxMainPrint.do?idx_cd=1009&board_cd=INDX_001)
+
+
 
