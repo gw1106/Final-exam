@@ -156,7 +156,7 @@ public interface Problem {
 ![스크린샷(55)](https://user-images.githubusercontent.com/81409594/121368304-f09b5380-c975-11eb-88e0-8916e65e2c0e.png)
 
 
-Main메소드에서 냉각률을 0.0095로 감소켜보았다 그 결과는 위 사진과 같다. 결과는 parameter추정에 실패한 것 같다. t값도 더 낮게 해보고 p0값도 낮게 해보았지만 parameter 추정이 쉽지 않았다.
+Main메소드에서 냉각률을 0.0095로 감소켜보았다 그 결과는 위 사진과 같다. 결과는 parameter추정에 실패한 것 같다. t값도 더 낮게 해보고 p0값도 낮게 해보았지만 parameter 추정이 쉽지 않았다. 정확하게 parameter의 추정을 어떠한 방식으로 해야하는지 잘 모르겠습니다.
 
 
 
